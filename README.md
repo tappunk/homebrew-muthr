@@ -1,3 +1,6 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/tappunk?style=social)](https://x.com/tappunk)
+
 # homebrew-muthr
 
 **muthr** is a Homebrew tap that installs a zero-trust orchestrator for local AI. It runs `llama.cpp` on the host and spawns isolated Lima VMs for agent execution.
