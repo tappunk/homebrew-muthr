@@ -1,7 +1,7 @@
 class Muthr < Formula
   desc "Zero-trust orchestrator for secure inference and isolated AI agent execution"
   homepage "https://github.com/tappunk/muthr"
-  version "0.1.29"
+  version "0.1.30"
 
   depends_on arch: :arm64
   depends_on :macos
@@ -9,7 +9,7 @@ class Muthr < Formula
   depends_on "llama.cpp"
 
   url "https://github.com/tappunk/muthr/releases/download/v#{version}/muthr-#{version}-bin-macos-arm64.tar.gz"
-  sha256 "285b85e741e2a5e3c486cdae7740d5f04075eeaa25cd5abb7dd3e5f3d6b71979"
+  sha256 "5a5e42edf24597d7b3e9b9859201d009e51de1fd6966f58cede4c757d4f6c594"
 
   def install
     bin.install "muthr"
