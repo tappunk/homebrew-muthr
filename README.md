@@ -22,9 +22,20 @@ muthr init               # Clone runtime profiles and VM definitions
 muthr serve              # Start llama-server as a background daemon (Metal)
 muthr status             # Check engine status and active profile
 muthr stop               # Stop the engine
+muthr list               # List available preset profiles
 
 cd ~/src/projects/my-awesome-app
 muthr up                 # Provision a sandbox for the current project
+muthr down               # Stop the sandbox VM
+muthr delete             # Delete the sandbox VM
+muthr ls                 # List all managed VMs
+
+muthr services start     # Launch MCP services VM
+muthr boot               # Full stack startup: inference engine + MCP services VM
+muthr shutdown           # Graceful shutdown of everything
+
+muthr download <source>  # Download a GGUF model
+muthr init               # Clone runtime profiles and VM definitions
 ```
 
 See [tappunk/muthr](https://github.com/tappunk/muthr) for presets, MCP services, and profile troubleshooting.
