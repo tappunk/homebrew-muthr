@@ -25,7 +25,7 @@ muthr serve --foreground # Run in foreground
 muthr stop               # Stop the engine
 muthr list               # List available preset profiles
 
-cd ~/src/projects/my-awesome-app
+cd ~/src/my-app
 muthr up                 # Provision a sandbox for the current project
 muthr down               # Stop the sandbox VM
 muthr delete             # Delete the sandbox VM
