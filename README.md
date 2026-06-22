@@ -7,7 +7,7 @@
 
 ## Prerequisites
 
-macOS (Apple Silicon / ARM64). Installs **[Lima](https://github.com/lima-vm/lima)**, **[llama.cpp](https://github.com/ggml-org/llama.cpp)**, and **[fd](https://github.com/sharkdp/fd)** automatically.
+macOS (Apple Silicon / ARM64). Installs **[Lima](https://github.com/lima-vm/lima)** and **[llama.cpp](https://github.com/ggml-org/llama.cpp)** automatically.
 
 ## Installation
 
@@ -19,8 +19,9 @@ muthr init               # Clone runtime profiles and VM definitions
 ## Usage
 
 ```bash
+muthr                    # Show system status dashboard (default)
 muthr serve              # Start llama-server as a background daemon (Metal)
-muthr status             # Check engine status and active profile
+muthr serve --foreground # Run in foreground
 muthr stop               # Stop the engine
 muthr list               # List available preset profiles
 
@@ -31,11 +32,19 @@ muthr delete             # Delete the sandbox VM
 muthr ls                 # List all managed VMs
 
 muthr services start     # Launch MCP services VM
-muthr boot               # Full stack startup: inference engine + MCP services VM
-muthr shutdown           # Graceful shutdown of everything
+muthr services status
+muthr services stop
+muthr services restart
+muthr services delete    # Delete the MCP services VM
 
-muthr download <source>  # Download a GGUF model
-muthr init               # Clone runtime profiles and VM definitions
+muthr boot               # Full stack startup: inference engine + MCP services VM
+muthr shutdown           # Graceful shutdown of all owned components
+
+muthr download <source>  # Download a GGUF model from HuggingFace
+muthr init               # Clone specs from tappunk/muthr-specs
+
+muthr config init        # Create muthr.toml config file
+muthr config show        # Show resolved configuration
 ```
 
 See [tappunk/muthr](https://github.com/tappunk/muthr) for presets, MCP services, and profile troubleshooting.
