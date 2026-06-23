@@ -33,13 +33,13 @@ muthr down               # Stop the sandbox VM
 muthr delete             # Delete the sandbox VM
 muthr ls                 # List all managed VMs
 
-muthr services start     # Launch MCP services VM
+muthr services start     # Launch muthr-services VM
 muthr services status
 muthr services stop
 muthr services restart
-muthr services delete    # Delete the MCP services VM
+muthr services delete    # Delete the muthr-services VM
 
-muthr boot               # Full stack startup: inference engine + MCP services VM
+muthr boot               # Full stack startup: inference engine + muthr-services VM
 muthr shutdown           # Graceful shutdown of all owned components
 
 muthr download <source>  # Download a GGUF model from HuggingFace
@@ -49,7 +49,7 @@ muthr config init        # Create muthr.toml config file
 muthr config show        # Show resolved configuration
 ```
 
-See [tappunk/muthr](https://github.com/tappunk/muthr) for presets, MCP services, and profile troubleshooting.
+See [tappunk/muthr](https://github.com/tappunk/muthr) for presets, muthr-services VM setup, and profile troubleshooting.
 
 ## Verification
 
