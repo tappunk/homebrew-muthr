@@ -22,16 +22,16 @@ muthr init               # Clone runtime profiles and VM definitions
 
 ```bash
 muthr                    # Show system status dashboard (default)
-muthr serve              # Start llama-server as a background daemon (Metal)
-muthr serve --foreground # Run in foreground
-muthr stop               # Stop the engine
-muthr list               # List available preset profiles
+muthr engine start              # Start llama-server as a background daemon (Metal)
+muthr engine start --foreground # Run in foreground
+muthr engine stop        # Stop the engine
+muthr engine presets               # List available preset profiles
 
 cd ~/src/my-app
-muthr up                 # Provision a sandbox for the current project
-muthr down               # Stop the sandbox VM
-muthr delete             # Delete the sandbox VM
-muthr ls                 # List all managed VMs
+muthr sandbox start                 # Provision a sandbox for the current project
+muthr sandbox stop               # Stop the sandbox VM
+muthr sandbox delete             # Delete the sandbox VM
+muthr sandbox ls         # List all managed VMs
 
 muthr services start     # Launch muthr-services VM
 muthr services status
@@ -39,7 +39,7 @@ muthr services stop
 muthr services restart
 muthr services delete    # Delete the muthr-services VM
 
-muthr boot               # Full stack startup: inference engine + muthr-services VM
+muthr run               # Full stack startup: inference engine + muthr-services VM
 muthr shutdown           # Graceful shutdown of all owned components
 
 muthr download <source>  # Download a GGUF model from HuggingFace
