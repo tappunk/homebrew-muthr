@@ -5,7 +5,7 @@
 
 # homebrew-muthr
 
-**muthr** is a Homebrew tap that installs a zero-trust orchestrator for local AI. It runs `llama.cpp` on the host and spawns isolated Lima VMs for agent execution.
+Homebrew tap for muthr - a zero-trust orchestrator for local ai inference and sandbox vms.
 
 ## Prerequisites
 
