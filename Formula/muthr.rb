@@ -5,7 +5,7 @@ class Muthr < Formula
 
   depends_on arch: :arm64
   depends_on :macos
-  depends_on "llama.cpp"
+  depends_on "lablup/tap/mlxcel"
 
   url "https://github.com/tappunk/muthr/releases/download/v#{version}/muthr-#{version}-bin-macos-arm64.tar.gz"
   sha256 "2fc57dbd16792d2e317b3b94eb0fa72e40e58c57cc6d9d9eeac0fafbb4c4334a"
@@ -23,8 +23,6 @@ class Muthr < Formula
         Apple container CLI must be available on this host.
 
       MLX runtime (optional):
-        brew tap lablup/tap
-        brew install mlxcel
         muthr engine start --runtime mlxcel --profile qwen3.6-35b-a3b-4bit
     EOS
   end

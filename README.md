@@ -11,14 +11,8 @@ Homebrew tap for muthr - a zero-trust orchestrator for local ai inference and sa
 
 macOS (Apple Silicon / ARM64).
 
-- Installs **[llama.cpp](https://github.com/ggml-org/llama.cpp)** automatically.
-- Install **[mlxcel](https://github.com/lablup/mlxcel)** for the MLX runtime (`muthr engine start --runtime mlxcel`).
+- Installs **[mlxcel](https://github.com/lablup/mlxcel)** via Homebrew dependency.
 - Requires Apple `container` CLI on host (system runtime prerequisite).
-
-```bash
-brew tap lablup/tap
-brew install mlxcel
-```
 
 ## Installation
 
@@ -31,7 +25,7 @@ muthr init               # Clone runtime profiles and container definitions
 
 ```bash
 muthr                    # Show system status dashboard (default)
-muthr engine start              # Start llama-server as a background daemon (Metal)
+muthr engine start              # Start mlxcel-server as a background daemon (Metal)
 muthr engine start --runtime mlxcel --profile qwen3.6-35b-a3b-4bit
 muthr engine start --foreground # Run in foreground
 muthr engine stop        # Stop the engine
