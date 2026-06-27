@@ -46,7 +46,7 @@ muthr services delete    # Delete the muthr-services containers
 muthr run               # Full stack startup: inference engine + muthr-services containers
 muthr shutdown           # Graceful shutdown of all owned components
 
-muthr download <source>  # Download a GGUF model from HuggingFace
+muthr download <source>  # Download mlx model files from HuggingFace
 muthr init               # Clone specs from tappunk/muthr-specs
 
 muthr config init        # Create muthr.toml config file
