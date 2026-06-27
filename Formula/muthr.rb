@@ -21,6 +21,11 @@ class Muthr < Formula
 
       Runtime prerequisite:
         Apple container CLI must be available on this host.
+
+      MLX runtime (optional):
+        brew tap lablup/tap
+        brew install mlxcel
+        muthr engine start --runtime mlxcel --profile qwen3.6-35b-a3b-4bit
     EOS
   end
 
