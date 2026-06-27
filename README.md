@@ -5,17 +5,20 @@
 
 # homebrew-muthr
 
-Homebrew tap for muthr - a zero-trust orchestrator for local ai inference and sandbox vms.
+Homebrew tap for muthr - a zero-trust orchestrator for local ai inference and sandbox containers.
 
 ## Prerequisites
 
-macOS (Apple Silicon / ARM64). Installs **[Lima](https://github.com/lima-vm/lima)** and **[llama.cpp](https://github.com/ggml-org/llama.cpp)** automatically.
+macOS (Apple Silicon / ARM64).
+
+- Installs **[llama.cpp](https://github.com/ggml-org/llama.cpp)** automatically.
+- Requires Apple `container` CLI on host (system runtime prerequisite).
 
 ## Installation
 
 ```bash
 brew install tappunk/muthr/muthr
-muthr init               # Clone runtime profiles and VM definitions
+muthr init               # Clone runtime profiles and container definitions
 ```
 
 ## Usage
@@ -29,17 +32,17 @@ muthr engine presets               # List available preset profiles
 
 cd ~/src/my-app
 muthr sandbox start                 # Provision a sandbox for the current project
-muthr sandbox stop               # Stop the sandbox VM
-muthr sandbox delete             # Delete the sandbox VM
-muthr sandbox ls         # List all managed VMs
+muthr sandbox stop               # Stop the sandbox container
+muthr sandbox delete             # Delete the sandbox container
+muthr sandbox ls         # List all managed sandbox containers
 
-muthr services start     # Launch muthr-services VM
+muthr services start     # Launch muthr-services containers
 muthr services status
 muthr services stop
 muthr services restart
-muthr services delete    # Delete the muthr-services VM
+muthr services delete    # Delete the muthr-services containers
 
-muthr run               # Full stack startup: inference engine + muthr-services VM
+muthr run               # Full stack startup: inference engine + muthr-services containers
 muthr shutdown           # Graceful shutdown of all owned components
 
 muthr download <source>  # Download a GGUF model from HuggingFace
@@ -49,7 +52,7 @@ muthr config init        # Create muthr.toml config file
 muthr config show        # Show resolved configuration
 ```
 
-See [tappunk/muthr](https://github.com/tappunk/muthr) for presets, muthr-services VM setup, and profile troubleshooting.
+See [tappunk/muthr](https://github.com/tappunk/muthr) for presets, muthr-services container setup, and profile troubleshooting.
 
 ## Verification
 

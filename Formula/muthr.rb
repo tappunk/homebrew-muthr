@@ -5,7 +5,6 @@ class Muthr < Formula
 
   depends_on arch: :arm64
   depends_on :macos
-  depends_on "lima"
   depends_on "llama.cpp"
 
   url "https://github.com/tappunk/muthr/releases/download/v#{version}/muthr-#{version}-bin-macos-arm64.tar.gz"
@@ -19,6 +18,9 @@ class Muthr < Formula
     <<~EOS
       muthr configurations must be initialized before first execution. Run:
         muthr init
+
+      Runtime prerequisite:
+        Apple container CLI must be available on this host.
     EOS
   end
 
