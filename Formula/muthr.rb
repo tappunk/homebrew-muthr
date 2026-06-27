@@ -20,10 +20,10 @@ class Muthr < Formula
         muthr init
 
       Runtime prerequisite:
-        Apple container CLI must be available on this host.
+        container CLI must be available on this host.
 
       MLX runtime (optional):
-        muthr engine start --runtime mlxcel --profile qwen3.6-35b-a3b-4bit
+        muthr engine start --profile mlxcel/quality-qwen3.6-35b-a3b-4bit.ini
     EOS
   end
 

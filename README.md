@@ -12,7 +12,7 @@ Homebrew tap for muthr - a zero-trust orchestrator for local ai inference and sa
 macOS (Apple Silicon / ARM64).
 
 - Installs **[mlxcel](https://github.com/lablup/mlxcel)** via Homebrew dependency.
-- Requires Apple `container` CLI on host (system runtime prerequisite).
+- Requires `container` CLI on host (system runtime prerequisite).
 
 ## Installation
 
@@ -26,10 +26,10 @@ muthr init               # Clone runtime profiles and container definitions
 ```bash
 muthr                    # Show system status dashboard (default)
 muthr engine start              # Start mlxcel-server as a background daemon (Metal)
-muthr engine start --runtime mlxcel --profile qwen3.6-35b-a3b-4bit
+muthr engine start --profile mlxcel/quality-qwen3.6-35b-a3b-4bit.ini
 muthr engine start --foreground # Run in foreground
 muthr engine stop        # Stop the engine
-muthr engine presets               # List available preset profiles
+muthr engine presets      # List preset IDs (one per line)
 
 cd ~/src/my-app
 muthr sandbox start                 # Provision a sandbox for the current project
