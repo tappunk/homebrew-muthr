@@ -7,6 +7,11 @@
 
 Homebrew tap for muthr - a zero-trust orchestrator for local ai inference and sandbox containers.
 
+muthr uses:
+
+- **Apple container** for sandbox and services containers: https://github.com/apple/container
+- **mlxcel** for local inference and OpenAI-compatible server mode: https://github.com/lablup/mlxcel
+
 ## Prerequisites
 
 macOS (Apple Silicon / ARM64).
