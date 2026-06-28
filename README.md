@@ -3,7 +3,7 @@
 
 # homebrew-muthr
 
-Homebrew tap for muthr - a zero-trust orchestrator for local ai inference and sandbox containers.
+Homebrew tap for muthr — zero-trust orchestrator for MLX inference and container-based sandboxes on Apple Silicon.
 
 muthr uses:
 
@@ -28,16 +28,16 @@ muthr init               # Clone runtime profiles and container definitions
 
 ```bash
 muthr                    # Show system status dashboard (default)
-muthr engine start              # Start mlxcel-server as a background daemon (Metal)
+muthr engine start       # Start mlxcel-server as a background daemon (Metal)
 muthr engine start --profile mlxcel/quality-qwen3.6-35b-a3b-4bit.ini
 muthr engine start --foreground # Run in foreground
 muthr engine stop        # Stop the engine
-muthr engine presets      # List preset IDs (one per line)
+muthr engine presets     # List preset IDs (one per line)
 
 cd ~/src/my-app
-muthr sandbox start                 # Provision a sandbox for the current project
-muthr sandbox stop               # Stop the sandbox container
-muthr sandbox delete             # Delete the sandbox container
+muthr sandbox start      # Provision a sandbox for the current project
+muthr sandbox stop       # Stop the sandbox container
+muthr sandbox delete     # Delete the sandbox container
 muthr sandbox ls         # List all managed sandbox containers
 
 muthr services start     # Launch muthr-services containers
@@ -46,7 +46,7 @@ muthr services stop
 muthr services restart
 muthr services delete    # Delete the muthr-services containers
 
-muthr run               # Full stack startup: inference engine + muthr-services containers
+muthr run                # Full stack startup: inference engine + muthr-services containers
 muthr shutdown           # Graceful shutdown of all owned components
 
 muthr download <source>  # Download mlx model files from HuggingFace
