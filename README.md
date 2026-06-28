@@ -14,7 +14,7 @@ muthr uses:
 
 macOS (Apple Silicon / ARM64).
 
-- Installs **[mlxcel](https://github.com/lablup/mlxcel)** via Homebrew dependency.
+- Installs **[mlxcel](https://github.com/lablup/mlxcel)** via `lablup/tap` Homebrew dependency.
 - Requires `container` CLI on host (system runtime prerequisite).
 
 ## Installation

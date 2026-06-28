@@ -5,7 +5,7 @@ class Muthr < Formula
 
   depends_on arch: :arm64
   depends_on :macos
-  depends_on "mlxcel"
+  depends_on "lablup/tap/mlxcel"
 
   url "https://github.com/tappunk/muthr/releases/download/v#{version}/muthr-#{version}-bin-macos-arm64.tar.gz"
   sha256 "f946786bd29f776f8f73bec5be1fc039d0e1460b9bbd6504bee31b0f10ccf817"
