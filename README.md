@@ -1,3 +1,5 @@
+![muthr](https://raw.githubusercontent.com/tappunk/.github/refs/heads/main/assets/muthr.webp)
+
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![X Follow](https://img.shields.io/twitter/follow/tappunk?style=social)](https://x.com/tappunk)
 
