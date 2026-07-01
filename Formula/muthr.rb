@@ -21,6 +21,8 @@ class Muthr < Formula
 
       Runtime prerequisite:
         Apple container CLI must be available on this host.
+        One inference runtime must be installed:
+          mlxcel:  brew tap lablup/tap && brew install lablup/tap/mlxcel
     EOS
   end
 
