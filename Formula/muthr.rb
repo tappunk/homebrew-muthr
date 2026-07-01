@@ -1,5 +1,5 @@
 class Muthr < Formula
-  desc "Zero-trust orchestrator for secure inference and isolated AI agent execution"
+  desc "Zero-trust orchestrator for MLX inference, container-based sandboxes, and MCP services on Apple Silicon"
   homepage "https://github.com/tappunk/muthr"
   version "0.1.46"
 
