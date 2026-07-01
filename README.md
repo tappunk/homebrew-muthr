@@ -5,7 +5,7 @@
 
 # homebrew-muthr
 > \[!NOTE]
-> Experimental not for production use
+> Tap for the current `muthr` release stream on Apple Silicon.
 
 Homebrew tap for [muthr](https://github.com/tappunk/muthr).
 
@@ -14,6 +14,7 @@ Homebrew tap for [muthr](https://github.com/tappunk/muthr).
 macOS (Apple Silicon / ARM64).
 
 - Requires [mlxcel](https://github.com/lablup/mlxcel) and `container` CLI.
+- Supports `mlxcel-server` and `llama-server` runtimes (runtime selection is handled by `muthr`).
 
 ## Installation
 
@@ -27,4 +28,5 @@ See [muthr](https://github.com/tappunk/muthr) for installation, usage, and archi
 
 ```bash
 brew test muthr
+muthr doctor
 ```
