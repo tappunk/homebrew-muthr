@@ -4,8 +4,8 @@
 [![X Follow](https://img.shields.io/twitter/follow/tappunk?style=social)](https://x.com/tappunk)
 
 # homebrew-muthr
-> \[!NOTE]
-> Tap for the current `muthr` release stream on Apple Silicon.
+
+Canonical documentation: **https://tappunk.com/muthr/**
 
 Homebrew tap for [muthr](https://github.com/tappunk/muthr).
 
@@ -13,8 +13,10 @@ Homebrew tap for [muthr](https://github.com/tappunk/muthr).
 
 macOS (Apple Silicon / ARM64).
 
-- Requires [mlxcel](https://github.com/lablup/mlxcel) and `container` CLI.
-- Supports `mlxcel-server` and `llama-server` runtimes (runtime selection is handled by `muthr`).
+- Requires [Apple container CLI](https://github.com/apple/container) (`container`) and at least one inference backend:
+  - [mlxcel](https://github.com/lablup/mlxcel) (`mlxcel-server`)
+  - [llama.cpp](https://github.com/ggml-org/llama.cpp) (`llama-server`)
+- Runtime selection (`mlxcel` or `llama`) is handled by `muthr`.
 
 ## Installation
 
@@ -30,3 +32,9 @@ See [muthr](https://github.com/tappunk/muthr) for installation, usage, and archi
 brew test muthr
 muthr doctor
 ```
+
+## Acknowledgements
+
+- [llama.cpp](https://github.com/ggml-org/llama.cpp)
+- [mlxcel](https://github.com/lablup/mlxcel)
+- [Apple container](https://github.com/apple/container)
